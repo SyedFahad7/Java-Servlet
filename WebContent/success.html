@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <style>
+        body {
+            background-color: #e0f2f1; /* Light greenish background color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff; /* White background for the content */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            padding: 40px;
+            max-width: 400px; /* Limit container width */
+        }
+
+        h1 {
+            color: #388e3c; /* Dark green color */
+            margin-bottom: 20px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        h1:hover {
+            color: #1b5e20; /* Darker green on hover */
+        }
+
+        p {
+            color: #555555; /* Dark gray color for text */
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none; /* Remove underline */
+            color: #ffffff; /* White text color */
+            background-color: #388e3c; /* Dark green background color */
+            padding: 10px 20px;
+            border-radius: 4px; /* Rounded corners */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and scaling transition */
+        }
+
+        a:hover {
+            background-color: #1b5e20; /* Darker green on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Successful</h1>
+        <p>Welcome to the protected page.</p>
+        <a href="index.html">Go to Home</a> <!-- Example link to return to the home page -->
+    </div>
+</body>
+</html>

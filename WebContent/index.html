@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fahad's Servlet </title>
+    <style>
+        body {
+            background-color: #e0f7fa; /* Light cyan background color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            color: #00796b; /* Dark teal color */
+            text-align: center;
+            transition: color 0.3s ease; /* Smooth color transition */
+            margin-top: 20px;
+        }
+
+        h1:hover {
+            color: #004d40; /* Darker teal on hover */
+        }
+
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none; /* Remove underline */
+            color: #00796b; /* Dark teal color */
+            transition: color 0.3s ease; /* Smooth color transition */
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: #004d40; /* Darker teal on hover */
+        }
+
+        form {
+            background-color: #ffffff; /* White background for form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 300px; /* Limit form width */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+        form:hover {
+            background-color: #f1f8f7; /* Light teal on hover */
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #00796b; /* Border color */
+            border-radius: 4px; /* Rounded corners */
+            transition: border-color 0.3s ease; /* Smooth border color transition */
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #004d40; /* Darker teal on focus */
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #00796b; /* Button background color */
+            color: white; /* Button text color */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40; /* Darker button color on hover */
+        }
+
+        .moving-text {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 10s linear infinite;
+            font-size: 18px;
+            color: #00796b;
+            margin: 20px 0;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .footer {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #00796b;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #004d40;
+        }
+
+        .footer img {
+            width: 24px;
+            vertical-align: middle;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .footer img:hover {
+            transform: scale(1.2); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: xx-large;">Fahad's Servlet</h1>
+    <div class="moving-text">Welcome to the My Servlet  Page - Explore the features!</div>
+    <ul>
+        <li style="font-size:large; font-family: 'Courier New', Courier, monospace;text-decoration: underline;"><a href="hello">Hello World</a></li>
+        <li  style="font-size: large; font-family: 'Courier New', Courier, monospace;text-decoration: underline;"><a href="info">Personal Info</a></li>
+        <li>
+            <form action="name-age" method="post">
+                Name: <input type="text" name="name"><br>
+                Age: <input type="text" name="age"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </li>
+        <li>
+            <form action="login" method="post">
+                Username: <input type="text" name="username"><br>
+                Password: <input type="password" name="password"><br>
+                <input type="submit" value="Login">
+            </form>
+        </li>
+    </ul>
+    <div class="footer">
+        <a href="https://syedfahad.tech" target="_blank">
+            <img src="https://img.icons8.com/ios/50/000000/globe--v1.png" alt="Globe Icon" />
+            <span>Visit my Portfolio!</span>
+        </a>
+    </div>
+</body>
+</html>

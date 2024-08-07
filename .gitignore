@@ -1,0 +1,36 @@
+# Windows files
+Thumbs.db
+ehthumbs.db
+
+target/
+
+# Ignore Maven build logs and settings
+*.log
+.mvn/
+!**/src/main/resources/**/.gitkeep
+
+# Ignore compiled class files
+*.class
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
+*.old
+
+# Ignore IDE-specific directories and files
+.vscode/
+
+# Ignore configuration files
+*.config
+*.properties
+*.settings

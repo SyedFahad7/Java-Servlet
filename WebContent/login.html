@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f0f4f8; /* Light background color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            color: #333333; /* Dark gray color */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            background-color: #ffffff; /* White background for the form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            padding: 30px;
+            max-width: 400px; /* Limit form width */
+            width: 100%;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px; /* Rounded corners for inputs */
+            transition: border-color 0.3s ease; /* Smooth border color transition */
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #388e3c; /* Green border on focus */
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #388e3c; /* Dark green background color */
+            color: #ffffff; /* White text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background color and scaling transition */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1b5e20; /* Darker green on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login Page</h1>
+        <form action="login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
